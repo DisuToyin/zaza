@@ -6,7 +6,7 @@ import { GoKebabHorizontal } from "react-icons/go";
 export default function PostActions() {
     return (
         <div className="flex text-[grey] cursor-pointer gap-10">
-            <div className="flex border rounded-[2rem] p-2 gap-2">
+            <div className="flex border  rounded-[2rem] p-2 gap-2">
                 <span className="flex gap-2">
                     {" "}
                     <BiUpvote className="text-[130%] font-light text-[grey]" />{" "}

@@ -1,6 +1,6 @@
 import React from "react";
 import disu from "../assets/disupic.jpg";
-export default function Avatar({ showInitials = true }) {
+export default function Avatar({ showInitials = true, src = "" }) {
     return (
         <>
             {showInitials === true ? (
@@ -11,7 +11,19 @@ export default function Avatar({ showInitials = true }) {
                 </div>
             ) : (
                 <div className="flex items-center space-x-4">
-                    <img className="w-9 h-10 rounded-full" src={disu} alt="" />
+                    {src !== "" ? (
+                        <img
+                            className="w-9 h-10 rounded-full"
+                            src={src}
+                            alt=""
+                        />
+                    ) : (
+                        <img
+                            className="w-9 h-10 rounded-full"
+                            src={disu}
+                            alt=""
+                        />
+                    )}
                 </div>
             )}
         </>

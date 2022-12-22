@@ -4,7 +4,7 @@ import Avatar from "./Avatar";
 
 export default function PeopleToFollow() {
     return (
-        <div className="border-t border-r border-l">
+        <div className="border-t border-r border-l my-[1rem]">
             <span className="flex gap-2   p-2 border-b">
                 <RxPerson className="bg-[#863A6F] text-[white]" />
                 <span className="font-light text-sm text-[grey]">

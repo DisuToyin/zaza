@@ -5,7 +5,7 @@ import PostActions from "./PostActions";
 
 export default function Post() {
     return (
-        <div className="border p-4 mb-4">
+        <div className="border-t border-l border-r p-4 ">
             <div className="flex gap-2">
                 <Avatar showInitials={false} />
                 <div>
