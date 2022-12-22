@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import Avatar from "./Avatar";
 import { Link, useNavigate } from "react-router-dom";
-
+import moment from "moment";
 export default function News() {
     const navigate = useNavigate();
     const [news, setNews] = useState([]);
@@ -44,7 +44,10 @@ export default function News() {
                                     }
                                 />
                                 <span className="self-center">
-                                    {n.creator || "N/A"}
+                                    <span>{n.creator || "N/A"} </span> <br />
+                                    <span className="text-[grey] font-light text-sm">
+                                        {moment(n.pubDate).format("MMM Do YY")}
+                                    </span>
                                 </span>
                             </div>
 
