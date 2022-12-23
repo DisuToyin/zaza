@@ -31,7 +31,7 @@ export default function News() {
                 return (
                     <div className="border-b ">
                         <a href={n.link} target="_blank">
-                            <h1 className="font-bold text-[grey] my-[1rem]">
+                            <h1 className="font-bold text-base text-[grey] my-[1rem]">
                                 {n.title}
                             </h1>
                             <div className="flex gap-2">
@@ -44,7 +44,10 @@ export default function News() {
                                     }
                                 />
                                 <span className="self-center">
-                                    <span>{n.creator || "N/A"} </span> <br />
+                                    <span className="text-sm">
+                                        {n.creator || "N/A"}{" "}
+                                    </span>{" "}
+                                    <br />
                                     <span className="text-[grey] font-light text-sm">
                                         {moment(n.pubDate).format("MMM Do YY")}
                                     </span>
